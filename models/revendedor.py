@@ -4,8 +4,8 @@ from datetime import datetime
 
 from models.model_base import ModelBase
 
-class Sabor(ModelBase):
-    __tablename__: str = 'sabores'
+class Revendedor(ModelBase):
+    __tablename__: str = 'revendedores'
 
     id: int = sa.Column(sa.BigInteger, primary_key=True,autoincrement=True)
     data_criacao: datetime = sa.Column(sa.DateTime, default=datetime.now, index=True)
@@ -13,4 +13,4 @@ class Sabor(ModelBase):
     
     
     def __repr__(self) -> str:
-        return f'<Sabor: {self.nome}>'
+        return f'<Revendedor: {self.nome}>'

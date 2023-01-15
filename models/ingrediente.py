@@ -4,8 +4,8 @@ from datetime import datetime
 
 from models.model_base import ModelBase
 
-class Sabor(ModelBase):
-    __tablename__: str = 'sabores'
+class Ingrediente(ModelBase):
+    __tablename__: str = 'ingredientes'
 
     id: int = sa.Column(sa.BigInteger, primary_key=True,autoincrement=True)
     data_criacao: datetime = sa.Column(sa.DateTime, default=datetime.now, index=True)
